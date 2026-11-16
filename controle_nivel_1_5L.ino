@@ -1,9 +1,5 @@
-#include <Adafruit_LiquidCrystal.h>      // <<< Tinkercad
-Adafruit_LiquidCrystal lcd(0);           //     objeto do LCD (I2C no Tinkercad)
-
-// Arduino IDE (montagem fisica), troque as duas linhas acima por:
-// #include <LiquidCrystal_I2C.h>
-// LiquidCrystal_I2C lcd(0x27, 16, 2);   //     endereco 0x27 ou 0x3F
+#include <LiquidCrystal_I2C.h>
+LiquidCrystal_I2C lcd(0x27, 16, 2);   //     endereco 0x27 ou 0x3F
 
 const int ledVerde    = 2;   // enchendo a plena vazao
 const int ledAmarelo  = 3;   // enchendo com vazao reduzida (zona da rampa)
